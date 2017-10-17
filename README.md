@@ -11,7 +11,7 @@
 So far we have mainly examined primitive data types like strings and integers.  As you have seen, it sometimes becomes convenient to represent data with objects, which gives us key value pairs. For example, we may represent a user as the following:
 
 ```javascript
-  let bobby = {name: 'bobby', age: 20, hometown: 'Philadelphia'}
+  const bobby = {name: 'bobby', age: 20, hometown: 'Philadelphia'}
 
   // our JavaScript object
 ````
@@ -19,13 +19,13 @@ So far we have mainly examined primitive data types like strings and integers.  
 Now imagine that we had a couple of users:
 
 ```js
-let bobby = {
+const bobby = {
   name: 'bobby',
   age: 20,
   hometown: 'Philadelphia'
 }
 
-let susan = {
+const susan = {
   name: 'susan',
   age: 28,
   hometown: 'Boston'
@@ -67,7 +67,7 @@ function User(name, age, hometown) {
 
 }
 
-let bobby = new User('bobby', 20, 'Philadelphia')
+const bobby = new User('bobby', 20, 'Philadelphia')
 // {}
 ```
 
@@ -81,7 +81,7 @@ function User(name, age, hometown) {
   console.log(age)
 }
 
-let bobby = new User('bobby', 20, 'Philadelphia')
+const bobby = new User('bobby', 20, 'Philadelphia')
 // bobby
 // 20
 // {}
@@ -96,7 +96,7 @@ function User(name, age, hometown) {
   console.log(this)
 }
 
-let bobby = new User('bobby', 20, 'Philadelphia')
+const bobby = new User('bobby', 20, 'Philadelphia')
 // {}
 // {}
 ```
@@ -112,7 +112,7 @@ function User(name, age, hometown) {
   this.hometown = hometown
 }
 
-let bobby = new User('bobby', 20, 'Philadelphia')
+const bobby = new User('bobby', 20, 'Philadelphia')
 // {name: 'bobby', age: 20, hometown: 'Philadelphia'}
 ```
 So you can see that we modified our constructor function such that when it is called, it creates the new JavaScript object.  We refer to that JavaScript object from inside of our function with the `this` keyword.  We then assign that new JavaScript object attributes with values that we receive from the arguments passed through.
@@ -150,10 +150,10 @@ function User(name, age, hometown) {
   this.hometown = hometown
 }
 
-let bobby = new User('bobby', 20, 'Philadelphia')
+const bobby = new User('bobby', 20, 'Philadelphia')
 // {name: 'bobby', age: 20, hometown: 'Philadelphia'}
 
-let fidoDido = new User('sally', 28, 'Boston')
+const fidoDido = new User('sally', 28, 'Boston')
 // {name: 'sally', age: 28, hometown: 'Boston'}
 ```
 
@@ -162,3 +162,5 @@ let fidoDido = new User('sally', 28, 'Boston')
 We've reviewed working with objects in JavaScript, and started to think about *object-orientated programming* by applying the *constructor function* pattern when creating objects so that we can easily define and reuse objects that we design.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-create-objects-readme'>Creating Objects in JS</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-object-oriented-constructor-functions-readme'>Creating Objects</a> on Learn.co and start learning to code for free.</p>
