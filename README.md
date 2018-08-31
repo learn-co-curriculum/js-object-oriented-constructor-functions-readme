@@ -35,7 +35,7 @@ let susan = {
 
 Great. Two nice users.
 
-Note, that with a both objects sharing exactly the same keys, and only the values differing, we are *[repeating ourselves](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)*.  We would like a mechanism to construct objects with the same attributes (that is, keys), while assigning different values to those keys.   
+Note, that with both objects sharing exactly the same keys, and only the values differing, we are *[repeating ourselves](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)*.  We would like a mechanism to construct objects with the same attributes (that is, keys), while assigning different values to those keys.   
 
 ### Constructor Function
 
