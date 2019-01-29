@@ -101,7 +101,7 @@ const bobby = new User('bobby', 20, 'Philadelphia')
 // {}
 ```
 
-We'll explore `this` in more detail in a later lesson, but for now know that `this` references the object that receives the method call.  It allows us to reference the object receiving the method from inside a method call.  Here, when we call a function with the `new` keyword, the object receiving the method call is the newly created object.  And so when you see the new object logged twice, the first time is from the `console.log(this)` code, and the second time is because the constructor function returns the newly created object.  So now that we understand that this references the object receiving the method call, or with a constructor function, the newly created object, let's move onto the final step.  
+We'll explore `this` in more detail in a later lesson, but for now know that `this` references the object that receives the method call.  It allows us to reference the object receiving the method from inside a method call.  Here, when we call a function with the `new` keyword, the object receiving the method call is the newly created object.  And so when you see the new object logged twice, the first time is from the `console.log(this)` code, and the second time is because the constructor function returns the newly created object.  To reiterate, `this` references the object that can receive the method call with the newly created object or with a constructor function. Now, let's move onto the final step.  
 
 Our final step is to modify that object by assigning it some attributes accordingly.   
 
